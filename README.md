@@ -14,4 +14,3 @@ Adjunto link NETLIFY [[INDICADORES](https://hcgalvan-3indicadores.netlify.app/)]
 
 Si no logro conectar con Netlify habilito la posibilidad de adjuntar archivo generado en Claude.
 Adjunto en este repositorio.
-
