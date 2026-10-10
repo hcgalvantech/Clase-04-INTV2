@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resumen Comercial 2022</title>
+<style>
+  :root{
+    --ink:#1a2233;
+    --paper:#f7f5f0;
+    --rule:#c9c2b4;
+    --muted:#6b6459;
+    --good:#3f6b4e;
+    --warn:#a5551c;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:-apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  main{
+    max-width:920px;
+    margin:0 auto;
+    padding:64px 24px 80px;
+  }
+  header{
+    border-bottom:1px solid var(--rule);
+    padding-bottom:28px;
+    margin-bottom:56px;
+  }
+  .fecha{
+    font-size:13px;
+    letter-spacing:.02em;
+    color:var(--muted);
+    margin:0 0 10px;
+  }
+  h1{
+    font-family:Georgia,"Iowan Old Style","Times New Roman",serif;
+    font-weight:400;
+    font-size:clamp(28px,4vw,38px);
+    line-height:1.15;
+    margin:0;
+  }
+  .indicadores{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:0;
+  }
+  .indicador{
+    padding:0 28px;
+    border-left:1px solid var(--rule);
+  }
+  .indicador:first-child{
+    padding-left:0;
+    border-left:none;
+  }
+  .indicador .etiqueta{
+    font-size:14px;
+    color:var(--muted);
+    margin:0 0 14px;
+    line-height:1.4;
+  }
+  .indicador .valor{
+    font-family:Georgia,"Iowan Old Style","Times New Roman",serif;
+    font-size:clamp(30px,4.2vw,44px);
+    line-height:1;
+    margin:0 0 12px;
+  }
+  .indicador .nota{
+    font-size:13px;
+    color:var(--ink);
+    margin:0;
+    line-height:1.5;
+  }
+  .indicador .nota.estado-bien::before{content:"● "; color:var(--good);}
+  .indicador .nota.estado-riesgo::before{content:"● "; color:var(--warn);}
+  footer{
+    margin-top:56px;
+    padding-top:20px;
+    border-top:1px solid var(--rule);
+    font-size:13px;
+    color:var(--muted);
+  }
+  @media (max-width:640px){
+    .indicadores{
+      grid-template-columns:1fr;
+      row-gap:36px;
+    }
+    .indicador{
+      border-left:none;
+      padding-left:0;
+      border-top:1px solid var(--rule);
+      padding-top:28px;
+    }
+    .indicador:first-child{border-top:none; padding-top:0;}
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="fecha">Enero – Diciembre 2022</p>
+    <h1>Resumen comercial</h1>
+  </header>
+
+  <section class="indicadores">
+    <div class="indicador">
+      <p class="etiqueta">Ventas totales</p>
+      <p class="valor">$103.805M</p>
+      <p class="nota">1.901 transacciones en el año, con diciembre registrado solo hasta el día 14.</p>
+    </div>
+
+    <div class="indicador">
+      <p class="etiqueta">Margen bruto</p>
+      <p class="valor">15,7%</p>
+      <p class="nota estado-bien">Markup promedio del 18,4% sobre el costo unitario.</p>
+    </div>
+
+    <div class="indicador">
+      <p class="etiqueta">Concentración del cliente principal</p>
+      <p class="valor">42,1%</p>
+      <p class="nota estado-riesgo">De ventas en un solo cliente, sobre una cartera de solo 4 cuentas.</p>
+    </div>
+  </section>
+
+  <footer>
+    Datos de la base de ventas 2022 · página de prueba de despliegue
+  </footer>
+</main>
+</body>
+</html>
