@@ -10,4 +10,7 @@
   
 ---
 
-Adjunto link [[INDICADORES](https://hcgalvan-3indicadores.netlify.app/)]
+Adjunto link NETLIFY [[INDICADORES](https://hcgalvan-3indicadores.netlify.app/)]
+
+Si no logro conectar con Netlify habilito la posibilidad de conectar con Claude.
+Adjunto link CLAUDE [[INDICADORES](https://claude.ai/artifact/2hHgJAVBf9XdzPes1gciq7)]
